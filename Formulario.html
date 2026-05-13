@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha intergalactica</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="#" alt="logo cafeteria lunar">
+        <H1>Cafeteria Lunar</H1>
+        <nav class="header--menu--principal">
+            <a href="index.html">Voltar a o Início</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Avaliações</a>
+            <a href='Formulario.html'>Trabalhe conosco</a>
+        </nav>
+    </header>
+    <main>
+                <h2>Trabalhe Conosco!!</h2>
+        <form>
+            <fieldset class="ficha--inscricao">
+                <legend>Ficha de inscrição</legend>
+                <p>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="inscricao" placeholder="Digite seu nome completo" required>
+                </p>
+                <p>
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="inscricao" placeholder="Digite seu Email" required>
+                </p>
+                <p>
+                    <label for="tel" >Digite seu telefone</label>
+                    <input type="tel" id="tel" name="inscricao" placeholder="Numero com DDD" required>
+                </p>
+                <p>
+                    <label for="nascimento" >Data de nascimento</label>
+                    <input type="date" id="nascimento" name="inscricao" placeholder="Dia que voce nasceu" required>
+                </p>
+            </fieldset>
+<fieldset class="ficha--profissional">
+    <legend class="seccoes--titulos">💼 Informações profissionais</legend>
+    <input type="radio" id="barista" name="area_interesse" value="barista" required>
+    <label for="barista">Barista</label>
+
+    <input type="radio" id="atendimento" name="area_interesse" value="atendimento">
+    <label for="atendimento">Atendimento</label>
+
+    <input type="radio" id="cozinha" name="area_interesse" value="cozinha">
+    <label for="cozinha">Cozinha</label>
+
+    <input type="radio" id="limpeza" name="area_interesse" value="limpeza">
+    <label for="limpeza">Limpeza</label> 
+</fieldset>
+<fieldset class="ficha--disponibilidade">
+    <legend class="seccoes--titulos">🌙 Disponibilidade</legend>
+    <input type="checkbox" id="manha" name="Disponibilidade" value="manha">
+    <label for="manha">manha</label>
+
+    <input type="checkbox" id="tarde" name="Disponibilidade" value="tarde">
+    <label for="tarde">tarde</label>
+
+    <input type="checkbox" id="noite" name="Disponibilidade" value="noite">
+    <label for="noite">noite</label>
+</fieldset>
+<fieldset class="ficha--trajetoria">
+    <legend class="seccoes--titulos">🧠 Conte sobre sua trajetoria</legend>
+<label for="trajetoria">Pode se abrir</label>
+<textarea id="trajetoria"></textarea>
+    <input type="file" required>
+    <input type="submit" value="Enviar ficha">
+</fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
